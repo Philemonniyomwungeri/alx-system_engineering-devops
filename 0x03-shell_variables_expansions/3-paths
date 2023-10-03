@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Number of directories in the PATH: $num_dirs
