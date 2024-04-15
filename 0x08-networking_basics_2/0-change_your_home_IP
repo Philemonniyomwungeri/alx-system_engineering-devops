@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Update /etc/hosts to change localhost IP to 127.0.0.2
+sed -i 's/^127.0.0.1.*localhost$/127.0.0.2 localhost/' /etc/hosts
+
+# Update DNS resolver configuration to resolve facebook.com to 8.8.8.8
+echo 'nameserver 8.8.8.8' > /etc/resolv.conf
